@@ -10,6 +10,8 @@ headers = {"Accept-Language": "en-US, en;q=0.5"}
 # Inform the user about download progress
 print('Downloading page %s ...' % url)
 
+# Test
+
 # Send a GET request to the URL and get the HTML content
 response = requests.get(url, headers=headers)
 html_content = response.content
