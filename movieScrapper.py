@@ -19,7 +19,7 @@ soup = BeautifulSoup(html_content, 'html.parser')
 table = soup.find('table', {'class': 'chart'})
 
 movies = []
-for row in table.find_all('tr')[1:251]: # get first 250 rows
+for row in table.find_all('tr')[1:251]:
     title_column = row.find('td', {'class': 'titleColumn'})
     title = title_column.a.text
     year = title_column.span.text
